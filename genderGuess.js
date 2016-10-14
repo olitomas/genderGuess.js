@@ -34,7 +34,11 @@ var stringContains = function(string, list) {
   return wasFound;
 };
 
-var genderGuess = function(name) {
+var genderGuess = function(name, returnLists) {
+  if(name.constructor === Array){
+    return analyzeNames(name, returnLists);
+  }
+  
   if(stringContains(name, boyz)){
     return 'male';
   }
