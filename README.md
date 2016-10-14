@@ -4,11 +4,11 @@ genderGuess tries to guess the gender of Icelandic names.
 
 ## How it works
 
-### Basic genderGuess function:
+### Checking a single name:
 
 ```javascript
 
-//The basic function is called genderGuess
+//When checking a single name you call genderGuess with a string, like so:
 
 genderGuess('Óli Tómas Freysson');
 // This specific example returns ---> 'male'
@@ -17,25 +17,27 @@ genderGuess('Óli Tómas Freysson');
 
 ```
 
-### analyzeNames function:
+### Checking a list of names (array):
 
 ```javascript
 
-// This function will analyze a list of names
+// When you call genderGuess with an array it will analyze the list
 
 // The first parameter is the list of names (array)
-// The second parameter is optional. If set then the results will also contain 3 arrays (the names sorted into categories)
+// The second parameter is optional. If set then the results will also contain the names sorted into 3 lists (males, females and unknown)
+
+//Example:
 
 var people = ['Guðrún Arnardóttir', 'Björgvin Halldórsson', 'Bubbi Morthens', 'Jón Arnar Magnússon', 'Vala Flosadóttir'];
 
-analyzeNames(people); // This returns:
+genderGuess(people); // This returns:
 {
   "males": 2,
   "females": 2,
   "unknown": 1
 }
 
-// The same function can be called with the second parameter (argument) as true:
+// genderGuess can also be called with the second parameter (argument) as true:
 analyzeNames(people, true); // This returns:
 {
   "males": 2,
