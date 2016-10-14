@@ -34,7 +34,7 @@ var stringContains = function(string, list) {
   return wasFound;
 };
 
-var guessGender = function(name) {
+var genderGuess = function(name) {
   if(stringContains(name, boyz)){
     return 'male';
   }
@@ -58,7 +58,7 @@ var analyzeNames = function(names, returnLists) {
   var unknown = [];
 
   for (var i = 0; i < names.length; i++) {
-    var guess = guessGender(names[i]);
+    var guess = genderGuess(names[i]);
 
     if(guess === 'male'){
       results.males++;
