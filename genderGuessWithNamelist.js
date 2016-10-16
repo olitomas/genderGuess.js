@@ -59,8 +59,7 @@ var genderGuess = function(name, returnLists) {
   if(stringContains(name, femaleNames)){
     return 'female';
   }
-
-  console.log('Unknown: ', name);
+  
   return 'unknown';
 };
 
