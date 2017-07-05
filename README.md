@@ -38,7 +38,7 @@ genderGuess(people); // This returns:
 }
 
 // genderGuess can also be called with the second parameter (argument) as true:
-analyzeNames(people, true); // This returns:
+genderGuess(people, true); // This returns:
 {
   "males": 2,
   "females": 2,
