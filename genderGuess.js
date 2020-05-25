@@ -1,4 +1,4 @@
-var boyz = ['ndur', 'sson', 'ason', 'arson', 'tur'];
+var boyz = ['ndur', 'sson', 'ason', 'arson'];
 var girlz = ['dottir', 'dóttir'];
 
 var arrayFy = function(thing) {
